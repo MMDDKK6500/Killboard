@@ -1,0 +1,14 @@
+name: Killboard
+version: '${project.version}'
+main: works.mmddkk.Killboard
+api-version: 1.19
+authors: [ MMDDKK6500 ]
+description: Shows how many times the player has been has killed and has been killed in the scoreboard
+website: mmddkk.works/killboard
+#commands:
+#  fly:
+#    description: Toggles flying
+#    usage: /fly
+#    aliases: [f, togglefly, flying]
+#    permission: firstplugin.fly
+#    permission-message: You don't have permission to use this command.
