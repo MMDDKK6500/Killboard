@@ -1,7 +1,6 @@
 package works.mmddkk.handlers;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Statistic;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -25,10 +24,6 @@ public class PlayerHandler implements Listener {
     public void onPlayerJoin(PlayerJoinEvent event) {
 
         FileConfiguration config = plugin.getConfig();
-
-        /*if (config.getBoolean("joinmessage.enabled")) {
-            event.setJoinMessage(ChatColor.translateAlternateColorCodes('&', config.getString("joinmessage.message").replace("%player%", event.getPlayer().getDisplayName())));
-        }*/
 
         Player player = event.getPlayer();
 

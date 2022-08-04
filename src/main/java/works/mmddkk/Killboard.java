@@ -13,16 +13,12 @@ public final class Killboard extends JavaPlugin {
         // Plugin startup logic
         loadConfig();
 
-        /*if (config.getBoolean("test")) {
-            Bukkit.getLogger().info("Killboard: Test in true");
-        }*/
-
         //register command executor
         //getCommand("fly").setExecutor(new Fly());
+        //just as an example
 
         //instantiate handlers
         new PlayerHandler(this);
-        //new TorchHandler(this);
     }
 
     @Override
@@ -38,9 +34,6 @@ public final class Killboard extends JavaPlugin {
 
     private void loadConfig() {
         config = getConfig();
-        Bukkit.getLogger().info("Loading Config");
-        //config.addDefault("joinmessage.enabled", true);
-        //config.addDefault("joinmessage.message", "&4%player% &7has joined the server");
         config.addDefault("killboard-enabled", true);
         config.options().copyDefaults(true);
         saveConfig();
