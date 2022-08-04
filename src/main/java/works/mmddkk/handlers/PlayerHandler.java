@@ -35,10 +35,10 @@ public class PlayerHandler implements Listener {
         if (config.getBoolean("killboard-enabled")) {
             ScoreHelper helper = ScoreHelper.createScore(player);
             helper.setTitle("&bKillboard");
-            helper.setSlot(5, "&7&m--------------");
-            helper.setSlot(4, "&aKills: &c" + player.getStatistic(Statistic.PLAYER_KILLS));
-            helper.setSlot(3, "&4Deaths: &c" + player.getStatistic(Statistic.DEATHS));
-            helper.setSlot(2, "&7&m--------------");
+            helper.setSlot(4, "&7&m--------------");
+            helper.setSlot(3, "&aKills: &c" + player.getStatistic(Statistic.PLAYER_KILLS));
+            helper.setSlot(2, "&4Deaths: &c" + player.getStatistic(Statistic.DEATHS));
+            helper.setSlot(1, "&7&m--------------");
             //helper.setSlot(1, "&7Made by &4MMDDKK#6500");
         }
     }
